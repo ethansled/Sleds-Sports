@@ -1,0 +1,25 @@
+{
+  "name": "sleds-sports",
+  "version": "1.0.0",
+  "description": "Live Score Web Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethansled/Sleds-Sports.git"
+  },
+  "author": "Ethan Sledzinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethansled/Sleds-Sports/issues"
+  },
+  "homepage": "https://github.com/ethansled/Sleds-Sports#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
