@@ -6,9 +6,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.set("view engine","ejs");
-app.use("/public", express.static(_dirname + "/public"));
+app.use("/public", express.static(__dirname + "/public"));
 
-app.get("/index" , (res,req) => {
+app.get("/" , (res,req) => {
     res.render("../views/index.ejs");
 });
 
