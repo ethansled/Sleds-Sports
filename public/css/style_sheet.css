@@ -196,7 +196,7 @@ a:hover{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
  #pComments {
-    width: 20%;
+    width: 10%;
     padding: 1.5%;
     color: rgb(235, 232, 232);
     background-color: #2d3436;
@@ -209,7 +209,7 @@ a:hover{
  }
  
  #lComment{
-    width: 20%;
+    width: 10%;
     padding: 1.5%;
     margin-bottom: 1.5%;
     color: rgb(235, 232, 232);
@@ -231,4 +231,3 @@ a:hover{
     border:groove 5px rgb(235, 232, 232);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
- 

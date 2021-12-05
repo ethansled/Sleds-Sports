@@ -1,5 +1,5 @@
 window.onload = function(){
-    document.getElementById('usComments').innerHTML
+    document.getElementById('usComments').innerHTML 
 }
 
 const usComments = document.getElementById('usComments');
@@ -29,12 +29,6 @@ function addComment(ev) {
     reply.className = 'reply';
     reply.innerHTML = 'Reply';
     reply.style.marginLeft = "50%";
-    const likeButton = document.createElement('button');
-    likeButton.innerHTML = 'Like';
-    likeButton.className = 'likeComment';
-    const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = 'Delete';
-    deleteButton.className = 'deleteComment';
 
     if(createClass(ev.target.parentElement, 'conta')) {
         const wrapDiv = document.createElement('div');
@@ -42,7 +36,7 @@ function addComment(ev) {
         commentText = document.getElementById('commentZone').value;
         document.getElementById('commentZone').value = '';
         textBox.innerHTML = commentText;
-        wrapDiv.append(textBox, reply, likeButton, deleteButton);
+        wrapDiv.append(textBox, reply);
         usComments.appendChild(wrapDiv);
         textBox.style.background = "#2d3436";
 
@@ -51,9 +45,9 @@ function addComment(ev) {
         commentText = ev.target.parentElement.firstElementChild.value;
         textBox.innerHTML = commentText;
         wrapDiv.innerHTML = '';
-        wrapDiv.append(textBox, reply, likeButton, deleteButton);
+        wrapDiv.append(textBox, reply);
         textBox.style.background = "#2d3436";
-    }   
+    }
 }
 
 
@@ -69,22 +63,12 @@ document.getElementById('usComments').addEventListener('click', function (e) {
         const textArea = document.createElement('textarea');
         const addButton = document.createElement('button');
         addButton.className = 'addReply';
-        addButton.innerHTML = 'Post Reply';
-        const cancelButton = document.createElement('button');
-        cancelButton.innerHTML = 'Cancel';
-        cancelButton.className='cancelReply';       
-        wrapDiv.append(textArea, addButton, cancelButton);
+        addButton.innerHTML = 'Post Reply';       
+        wrapDiv.append(textArea, addButton);
         parentDiv.appendChild(wrapDiv);     
         textArea.style.backgroundColor = "#2d3436";        
     } else if(createClass(e.target, 'addReply')) {
         addComment(e); 
-    } else if(hasClass(e.target, 'likeComment')) {
-        const likeBtnValue = e.target.innerHTML;
-        e.target.innerHTML = likeBtnValue !== 'Like' ? Number.parseInt(likeBtnValue) + 1 : 1;
-    } else if(hasClass(e.target, 'cancelReply')) {
-        e.target.parentElement.innerHTML = '';
-    } else if(hasClass(e.target, 'deleteComment')) {
-        e.target.parentElement.remove();
     }
 });
 
