@@ -1,11 +1,11 @@
-import { MY_API_KEY } from "/public/js/config.js";
+import { MY_API_KEY_SOCCER } from "/public/js/config.js";
 
 fetch("https://soccer-data.p.rapidapi.com/match/list/live?date=29%2F01%2F2021", {
 	"method": "GET",
 	"headers": {
 		'Content-Type': 'application/JSON',
 		"x-rapidapi-host": "soccer-data.p.rapidapi.com",
-		"x-rapidapi-key": MY_API_KEY
+		"x-rapidapi-key": MY_API_KEY_SOCCER
 	}
 })
 .then(response => response.json())
