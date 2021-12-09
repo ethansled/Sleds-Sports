@@ -1,0 +1,193 @@
+
+input[type="radio"] {
+    display: none;
+}
+
+.containerPhoto {
+    position: relative;
+    height: 50vh;
+    width: 98%;
+    padding: 1%;
+}
+
+.slide-wrapper {
+    position: relative;
+    margin: auto;
+    padding: 3em;
+    width: 88%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 0px rgb(53, 53, 53);
+    overflow: hidden;
+}
+
+
+#slide-role {
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    z-index: 100;
+    transition: left .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    /* flex */
+    display: flex;
+}
+
+.slide {
+    width: 80%;
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+.slide-1 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/11/19/28/american-football-2940149_960_720.jpg");
+}
+
+.slide-2 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/02/15/47/baseball-field-1563858_960_720.jpg");
+}
+
+.slide-3 {
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/07/08/59/basketball-6687953_960_720.jpg");
+}
+
+.slide-4 {
+    background-image: url("https://cdn.pixabay.com/photo/2019/06/19/18/35/ice-hockey-4285440_960_720.jpg");
+}
+
+.slide-5 {
+    background-image: url("https://cdn.pixabay.com/photo/2014/10/14/20/24/soccer-488700_960_720.jpg");
+}
+
+.btn,
+.btn::after {
+    border-radius: 50%;
+    transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.btn {
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
+    bottom: 12%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 1000;
+    position: sticky;
+}
+
+.btn:nth-of-type(1) {
+    left: 38%;
+}
+
+.btn:nth-of-type(2) {
+    left: 45%;
+}
+
+.btn:nth-of-type(3) {
+    left: 52%;
+}
+
+.btn:nth-of-type(4) {
+    left: 59%;
+}
+
+.btn:nth-of-type(5) {
+    left: 66%;
+}
+
+.btn:hover {
+    transform: scale(1.5);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    border: 1px solid white;
+    background: #f3d836;
+    width: 20px;
+    height: 20px;
+    margin: 3px 3px;
+    transform: scale(.5, .5);
+    box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
+}
+
+
+input[type="radio"]:checked#slide-2-trigger~div.slide-wrapper>div#slide-role {
+    left: -100%;
+}
+
+input[type="radio"]:checked#slide-3-trigger~div.slide-wrapper>div#slide-role {
+    left: -200%;
+}
+
+input[type="radio"]:checked#slide-4-trigger~div.slide-wrapper>div#slide-role {
+    left: -300%;
+}
+
+input[type="radio"]:checked#slide-5-trigger~div.slide-wrapper>div#slide-role {
+    left: -400%;
+}
+
+
+input[type="radio"]:checked+label.btn {
+    transform: scale(1.2);
+    border: 1px solid rgba(53, 53, 53, 0.308);
+}
+
+input[type="radio"]:checked+label.btn::after {
+    transform: scale(1.1, 1.1);
+    background: #e2b718;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .slide-wrapper {
+        width: 90%;
+        height: 100%;
+    }
+    .btn:nth-of-type(1) {
+        left: 93%;
+        bottom: 60%;
+    }
+    .btn:nth-of-type(2) {
+        left: 93%;
+        bottom: 50%;
+    }
+    .btn:nth-of-type(3) {
+        left: 93%;
+        bottom: 40%;
+    }
+    .btn:nth-of-type(4) {
+        left: 93%;
+        bottom: 30%;
+    }
+    .btn:nth-of-type(5) {
+        left: 93%;
+        bottom: 20%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn:nth-of-type(1) {
+        left: 91%;
+    }
+    .btn:nth-of-type(2) {
+        left: 91%;
+    }
+    .btn:nth-of-type(3) {
+        left: 91%;
+    }
+    .btn:nth-of-type(4) {
+        left: 91%;
+    }
+    .btn:nth-of-type(5) {
+        left: 91%;
+    }
+}

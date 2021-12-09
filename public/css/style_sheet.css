@@ -172,6 +172,20 @@ a:hover{
     color: transparent;
 }
 
+#mnav2:hover{
+  background: linear-gradient(90deg, #ba800d, #f3d836, #f2e9a6, #c3ae61, #e2b718, #e4a40d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#mnav:hover{
+  background: linear-gradient(90deg, #ba800d, #f3d836, #f2e9a6, #c3ae61, #e2b718, #e4a40d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .active{
     background: linear-gradient(90deg, #ba800d, #f3d836, #f2e9a6, #c3ae61, #e2b718, #e4a40d);
     background-clip: text;

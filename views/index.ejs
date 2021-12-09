@@ -11,12 +11,15 @@
         <link rel="shortcut icon" href="./public/Images/trophy-png-30567.png" type="png">
         <script src="https://kit.fontawesome.com/6f5f524506.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./public/css/style_sheet.css">
+        <link rel="stylesheet" href="../public/css/rating.css">
+        <link rel="stylesheet" href="../public/css/photo.css">
+        <script src="../public/js/rating.js" defer></script>
     </head>
 
     <body>
         <header id="page_header">
             <h1>Sleds Sports</h1>
-            <img src="./public/Images/trophy-png-30567.png" alt="trophy image">
+            <img id="logo "src="./public/Images/trophy-png-30567.png" alt="trophy image">
             <nav id="nav_bar">
                 <p id="p_menu">What Sport Is For You?</p>
                 <menu class="menu">                       
@@ -30,12 +33,61 @@
             </nav>
         </header>
 
-    
-        
         <main id="page_main_content">
             <h2>The Best Name In Sports</h2> 
             <p>This Page is Designed to Provide the Optimal Score Viewing Expirence with Everydays Live Games:</p>
             
+            <div id="rating">
+                <p>Please Rate This Site:</p>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="containerPhoto">
+                <h2>Sports Gallery</h2>
+                <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
+                <label class="btn" for="slide-1-trigger"></label>
+                <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
+                <label class="btn" for="slide-2-trigger"></label>
+                <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
+                <label class="btn" for="slide-3-trigger"></label>
+                <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
+                <label class="btn" for="slide-4-trigger"></label>
+                <input type="radio" name="slider" id="slide-5-trigger" class="trigger">
+                <label class="btn" for="slide-5-trigger"></label>
+        
+                <div class="slide-wrapper">
+                    <div id="slide-role">
+                        <div class="slide slide-1"></div>
+                        <div class="slide slide-2"></div>
+                        <div class="slide slide-3"></div>
+                        <div class="slide slide-4"></div>
+                        <div class="slide slide-5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <ul id="main_nav">                   
                 <a id="mnav" href="/football"><i class="fas fa-football-ball"></i>Football Scores</a>
                 <a id="mnav" href="/baseball"><i class="fas fa-baseball-ball"></i>Baseball Scores</a>
