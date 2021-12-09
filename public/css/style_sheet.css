@@ -10,7 +10,7 @@ body{
 }
 
 h1{
-    color: rgb(235, 232, 232);
+    color: #122129;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -35,7 +35,7 @@ h1{
 }
 
 h2{
-    color: rgb(235, 232, 232);
+    color: #122129;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -62,7 +62,7 @@ h2{
 }
 
 h4{
-    color: rgb(235, 232, 232);
+    color: #122129;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
