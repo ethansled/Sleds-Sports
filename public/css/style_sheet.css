@@ -115,10 +115,10 @@ menu {
 }
 
 main{
-    color: rgb(235, 232, 232);
     background-color: #122129;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: left;
+    padding: 2%;
     border:groove 5px rgb(235, 232, 232);
     -moz-border-radius-topleft: 59px;
     -moz-border-radius-topright:16px;
@@ -181,7 +181,8 @@ a:hover{
 }
 
 .conta{
-    font-size: large
+    font-size: large;
+    padding: 3%;
  }
  #commentZone{
     color: rgb(235, 232, 232);
@@ -396,4 +397,34 @@ a:hover{
     background:#fff;
     -webkit-transform:rotate(-45deg);
     transform:rotate(-45deg);
+  }
+
+  #main_nav{
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+    border: groove 3px rgb(235, 232, 232);
+    background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+
+  }
+
+  #main_nav2{
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+    border: groove 3px rgb(235, 232, 232);
+    background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+
+  }
+
+  #mnav{
+    color: #122129;
+    padding: 50px;
+  }
+
+  #mnav2{
+    color: #122129;
+    padding: 100px;
   }
