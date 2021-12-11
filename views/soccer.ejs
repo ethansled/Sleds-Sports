@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="../public/css/style_sheet.css">
         <link rel="stylesheet" href="../public/css/api_style.css">
         <script src="../public/js/soccer.js" defer type="module"></script>
+        <script src="../public/js/comment.js"defer></script>
     </head>
 
     <body>
@@ -92,6 +93,15 @@
 
               
               <br>
+              <div class="conta">
+                <label for="commentZone" id="label">Click To --></label>
+                <button id="lComment" >Leave A Comment</button>
+                <textarea id="commentZone" rows="4"></textarea>
+                <button id="pComments">Post Comment</button>
+                <div id="usComments">
+                </div>
+            </div>
+            <br>
             <ul id="main_nav2">
                 <a id="mnav2" href="/"> <i class="fas fa-home"></i>Home</a>                   
                 <a id="mnav2" href="/football"><i class="fas fa-football-ball"></i>Football Scores</a>
